@@ -1,0 +1,8 @@
+#!/bin/bash
+trap "kill 0" EXIT
+
+icecast2 -c ./icecast.xml &
+
+sleep 5s && darkice -c darkiceconfig &
+
+wait
