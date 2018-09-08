@@ -18,6 +18,7 @@ disp.clear()
 disp.display()
 image = Image.new('1', (width, height))
 font = ImageFont.load_default()
+#font = ImageFont.truetype('',12)
 draw = ImageDraw.Draw(image)
 
 def writeText(text, line):
@@ -32,10 +33,23 @@ def updateDisplay():
   disp.display()
 
 
+def serverStatus():
+  #http://192.168.0.32:8000/status-json.xsl
+  disp.display()
+
+
 #text = 'LOADING...'
 
 # Clear image buffer by drawing a black filled box.
 draw.rectangle((0,0,width,height), outline=0, fill=0)
+
+file = open("./SSID", "r")
+SSID = file.read()
+LISTENERS = 0
+
+writeText("SSID: "+SSID,32)
+writeText("LISTENERS: "+str(LISTENERS),48)
+
 
 while 1:
 
