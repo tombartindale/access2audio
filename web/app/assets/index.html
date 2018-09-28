@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Accessible Audio Player</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js"></script>
+  <script>require('initialize');</script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Accessible Audio Player</a>
+        </div>
+      </nav>
+      </header>
+      <main>
+        <div class="container">
+        <p class="flow-text center">Plug in headphones to listen.</p>
+        <p class="flow-text center">There might be a slight delay in what you hear.</p>
+        <div class="player center">
+            <!-- <audio id="audio" autoplay controls> -->
+              <!-- <source src="http://10.0.0.1/live"/> -->
+              <!-- <source src="http://audio-mp3.ibiblio.org:8000/wcpe.mp3" type="audio/mp3"/> -->
+            <!-- </audio> -->
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                  <div class="circle-clipper left">
+                    <div class="circle"></div>
+                  </div><div class="gap-patch">
+                    <div class="circle"></div>
+                  </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+            </div>
+            <!-- <div id="container"> -->
+              <div class="bar" id="mono">
+                <div class="fill" id="monoFill"></div>
+              </div>
+            <!-- </div> -->
+            <br>
+            <br>
+            <button class="playbtn btn" disabled>Connecting...</button>
+        </div>
+      </div>
+      </main>
+      
+      
+      <footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container center">
+            Open Source Tool Available at <a href="https://github.com/tombartindale/access2audio">GitHub</a> &middot; Getting Audio From <span id="serverinfo"></span>
+            </div>
+          </div>
+        </footer>
+</body>

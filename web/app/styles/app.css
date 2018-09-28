@@ -1,0 +1,26 @@
+/* #container { */
+    /* height: 340px; */
+/* } */
+.bar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+}
+
+.fill:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+.fill {
+    transition: all .2s ease-in-out;
+    transform-origin: center;
+    opacity: 0.3;
+    background: silver;
+    border-radius: 50%;
+    width: 100%;
+}

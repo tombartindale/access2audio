@@ -1,0 +1,22 @@
+{
+  "name": "dashboard",
+  "description": "Brunch.io application",
+  "private": true,
+  "author": "",
+  "version": "0.0.1",
+  "repository": "",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "@types/node": "^10.11.0",
+    "events": "3.0.0",
+    "mic": "2.1.2",
+    "websocket-stream": "5.1.2",
+    "express": "4.16.3",
+    "express-ws": "4.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.1"
+  }
+}

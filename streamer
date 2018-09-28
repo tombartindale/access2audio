@@ -1,9 +1,0 @@
-#!/usr/bin/liquidsoap
-# Log dir
-set("log.file.path","./liquid.log")
-
- # Stream it out
-output.icecast(%vorbis,
-  host = "localhost", port = 8000,
-  password = "BlahBlah123", mount = "live.ogg",
-  input.alsa(bufferize = false, device="hw:1,0"))
