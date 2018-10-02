@@ -113,8 +113,14 @@ echo "exit 0;" >> /etc/network/if-up.d/iptables
 chmod +x /etc/network/if-up.d/iptables
 
 # Install NodeJS
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs
+# curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+# sudo apt-get install -y nodejs
+
+wget https://nodejs.org/dist/v8.12.0/node-v8.12.0-linux-armv6l.tar.xz
+tar -xzf node-v8.12.0-linux-armv6l.tar.gz
+cd node-v8.12.0-linux-armv6l/
+sudo cp -R * /usr/local/
+
 echo "Installed Node"
 
 # Clone scripts
