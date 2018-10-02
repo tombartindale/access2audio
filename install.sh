@@ -117,7 +117,7 @@ chmod +x /etc/network/if-up.d/iptables
 # sudo apt-get install -y nodejs
 
 wget https://nodejs.org/dist/v8.12.0/node-v8.12.0-linux-armv6l.tar.xz
-tar -xzf node-v8.12.0-linux-armv6l.tar.gz
+tar -xzf node-v8.12.0-linux-armv6l.tar.xz
 cd node-v8.12.0-linux-armv6l/
 sudo cp -R * /usr/local/
 
